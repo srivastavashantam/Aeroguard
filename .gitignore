@@ -209,3 +209,6 @@ __marimo__/
 
 #logs
 logs/
+
+#data
+/data/

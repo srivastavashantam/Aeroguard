@@ -16,14 +16,17 @@ paths:
   mlruns_dir: ./mlruns            # MLflow runs yahan store honge
 
 data:
-  # NGAFID dataset ke specific paths
-  raw_flight_data: ./data/all_flights/one_parq    # Dask parquet files
-  flight_header: ./data/all_flights/flight_header.csv  # flight metadata
+  # Poora raw dataset — 28,935 flights
+  raw_flight_data: ./data/all_flights/one_parq
+  flight_header_full: ./data/all_flights/flight_header.csv
 
-  # 30 minutes se kam ki flights ignore karenge — too short for analysis
-  min_flight_duration: 1800       # seconds mein
+  # Benchmark subset — 2 din wali flights, model training ke liye
+  flight_header_2days: ./data/2days/flight_header.csv
+  flight_data_2days: ./data/2days/flight_data.pkl
+  stats_2days: ./data/2days/stats.csv
 
-  # Paper ke benchmark ke hisaab se last 4096 seconds use karenge
+  # Flight filtering
+  min_flight_duration: 1800
   truncate_timesteps: 4096
 
 model:
