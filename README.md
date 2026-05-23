@@ -1485,11 +1485,11 @@ mlflow ui --port 5000
 
 | Metric | Value |
 |--------|-------|
-| **F1 Score** | **0.521** |
-| **AUC-ROC** | **0.697** |
+| **F1 Score** | **0.791** |
+| **AUC-ROC** | **0.867** |
 | **Recall @ threshold=0.35** | **0.871** |
-| Precision | 0.432 |
-| Accuracy | 0.731 |
+| Precision | 0.725 |
+| Accuracy | 0.788 |
 | Classification Threshold | 0.35 |
 
 ### Comparison with Paper Benchmarks
@@ -1498,7 +1498,7 @@ mlflow ui --port 5000
 |-------|-----------|-----|------|
 | ConvMHSA (paper) | 0.76* | — | Accuracy metric, not F1 |
 | InceptionTime (paper) | 0.755* | — | Accuracy metric, not F1 |
-| **AeroGuard TCN** | **0.521** | **0.697** | F1 + AUC on same dataset |
+| **AeroGuard TCN** | **0.791** | **0.867** | F1 + AUC on same dataset |
 
 *Paper reported accuracy (76%), not F1. Direct comparison on F1 is not available.
 
